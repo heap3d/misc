@@ -11,10 +11,15 @@ import modo
 
 
 def main():
-    tags = scan_scene_tags()
+    scene_tags = scan_scene_tags()
+    consolidated_tags = get_consolidated_tags(scene_tags)
 
 
-def scan_scene_tags() -> dict[str, modo.Item]:
+def scan_scene_tags() -> dict[str, list[modo.Item]]:
+    ...
+
+
+def get_consolidated_tags(tags: dict[str, list[modo.Item]]) -> dict[str, list[str]]:
     ...
 
 
