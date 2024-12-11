@@ -11,14 +11,10 @@ import modo
 
 
 def main():
-    ...
+    tags = scan_scene_tags()
 
 
-def get_tag_masks_dict() -> dict[str, modo.Item]:
-    ...
-
-
-def get_tags() -> list[str]:
+def scan_scene_tags() -> dict[str, modo.Item]:
     ...
 
 
